@@ -33,7 +33,6 @@
         }
 
         @keyframes pulse {
-
             0%,
             100% {
                 opacity: 1;
@@ -48,6 +47,21 @@
             background: linear-gradient(120deg, #e0f2fe 0%, #f0fdf4 100%);
             animation: pulse 3s infinite;
         }
+
+        /* Mobile Menu Styles */
+        .mobile-menu {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu {
+                display: block;
+            }
+
+            .desktop-menu {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -56,22 +70,19 @@
     <header class="bg-gradient-to-r from-indigo-600 to-purple-600 shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <a href="#"
-                    class="text-2xl font-bold text-white hover:text-indigo-100 transition-colors">MindTrapsAwareness</a>
+                <a href="#" class="text-2xl font-bold text-white hover:text-indigo-100 transition-colors">MindTrapsAwareness</a>
 
-                <nav class="hidden md:flex space-x-8 items-center">
+                <nav class="desktop-menu hidden md:flex space-x-8 items-center">
                     <a href="#" class="text-white-600 hover:text-indigo-600 font-medium transition-colors">Articles</a>
-                    <a href="#"
-                        class="text-white-600 hover:text-indigo-600 font-medium transition-colors">Psychology</a>
+                    <a href="#" class="text-white-600 hover:text-indigo-600 font-medium transition-colors">Psychology</a>
                     <a href="#" class="text-white-600 hover:text-indigo-600 font-medium transition-colors">Marketing</a>
                     <a href="#" class="text-white-600 hover:text-indigo-600 font-medium transition-colors">About</a>
-                    <button
-                        class="ml-4 px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors">
+                    <button class="ml-4 px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors">
                         Subscribe
                     </button>
                 </nav>
 
-                <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <button id="mobile-menu-button" class="mobile-menu md:hidden focus:outline-none">
                     ☰
                 </button>
             </div>
@@ -83,8 +94,8 @@
             <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bfabd35d-4181-4aef-9d8c-a9379c209b31.png"
                 alt="Illustration of smartphone with conflicting messages" class="w-full h-auto" id="articleHeroImage">
             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
-                <h1 class="text-3xl font-bold text-blue-400">What Is a Psychological Trap? – My Perspective</h1>
-                <p class="text-blue-400 mt-2">Understanding modern attention manipulation techniques</p>
+                <h1 class="text-3xl font-bold text-indigo-600">What Is a Psychological Trap? – My Perspective</h1>
+                <p class="text-indigo-600 mt-2">Understanding modern attention manipulation techniques</p>
             </div>
         </div>
         <p class="mb-4">In today’s hyper-connected world, attention is currency. The way we engage online — whether on
@@ -150,37 +161,27 @@
 
         <div class="bg-gray-800 p-8 rounded-xl shadow-xl mt-14 border border-gray-700">
             <div class="flex items-center space-x-4 mb-6">
-                <!-- <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d280b410-1a52-4b3a-96ea-e850b2e450ee.png"
-                    alt="Author profile" class="w-12 h-12 rounded-full"> -->
-                <!-- <div>
-                    <h4 class="font-semibold">Dr. Alex Chen</h4>
-                    <p class="text-gray-500 text-sm">Behavioral Psychologist & Digital Strategist</p>
-                </div> -->
+                <!-- Author profile can be added here -->
             </div>
             <div class="flex flex-wrap gap-3 mb-4">
                 <button onclick="shareArticle()"
                     class="px-5 py-3 bg-gradient-to-r from-indigo-500 to-blue-500 text-white rounded-lg hover:from-indigo-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 flex items-center gap-2 shadow-lg">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                        <path
-                            d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47c.131.04.274.06.415.06z">
-                        </path>
+                        <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47c.131.04.274.06.415.06z"></path>
                     </svg>
                     Share
                 </button>
                 <button onclick="tweetArticle()"
                     class="px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors flex items-center gap-2">
                     <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
-                        <path
-                            d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84">
-                        </path>
+                        <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"></path>
                     </svg>
                     Tweet
                 </button>
                 <button onclick="saveForLater()"
                     class="px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors flex items-center gap-2">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
                     </svg>
                     Save
                 </button>
@@ -215,7 +216,6 @@
                         <li><a href="#" class="text-lg font-semibold mb-4 hover:text-indigo-600">Contact</a></li>
                     </ul>
                 </div>
-
             </div>
             <div class="text-sm font-semibold mb-4 ">
                 &copy; 2025 MindTraps. No rights reserved.
@@ -226,8 +226,8 @@
     <script>
         // Mobile menu toggle
         document.getElementById('mobile-menu-button').addEventListener('click', function () {
-            // Mobile menu toggle logic here
-            console.log('Mobile menu clicked');
+            const menu = document.querySelector('.desktop-menu');
+            menu.classList.toggle('hidden');
         });
 
         function shareArticle() {
