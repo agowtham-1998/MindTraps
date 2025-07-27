@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,44 +13,58 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fHNvY2lhbCUyMG1lZGlhfGVufDB8fHx8MTYzMjY5MjY5NQ&ixlib=rb-1.2.1&q=80&w=1080');
-            background-size: cover;
-            background-position: center;
+            background-image: url('https://i.pinimg.com/1200x/d7/02/ff/d702ff6de042e298fa228a9600bdfea7.jpg');
+            background-size: contain;
+            background-position: top;
         }
+
         .article-img {
             transition: transform 0.3s ease;
         }
+
         .article-img:hover {
             transform: scale(1.02);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
+
         @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.9; }
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.9;
+            }
         }
+
         .highlight {
             background: linear-gradient(120deg, #e0f2fe 0%, #f0fdf4 100%);
             animation: pulse 3s infinite;
         }
     </style>
 </head>
+
 <body class="bg-gray-900 text-white">
     <!-- Header/Navigation -->
     <header class="bg-gradient-to-r from-indigo-600 to-purple-600 shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <a href="#" class="text-2xl font-bold text-white hover:text-indigo-100 transition-colors">MindTraps</a>
-                
+                <a href="#" class="text-2xl font-bold text-white hover:text-indigo-100 transition-colors">MindTrapsAwareness</a>
+
                 <nav class="hidden md:flex space-x-8 items-center">
-                    <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium transition-colors">Articles</a>
-                    <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium transition-colors">Psychology</a>
-                    <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium transition-colors">Marketing</a>
-                    <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium transition-colors">About</a>
-                    <button class="ml-4 px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors">
+                    <a href="#" class="text-white-600 hover:text-indigo-600 font-medium transition-colors">Articles</a>
+                    <a href="#"
+                        class="text-white-600 hover:text-indigo-600 font-medium transition-colors">Psychology</a>
+                    <a href="#" class="text-white-600 hover:text-indigo-600 font-medium transition-colors">Marketing</a>
+                    <a href="#" class="text-white-600 hover:text-indigo-600 font-medium transition-colors">About</a>
+                    <button
+                        class="ml-4 px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors">
                         Subscribe
                     </button>
                 </nav>
-                
+
                 <button id="mobile-menu-button" class="md:hidden focus:outline-none">
                     ☰
                 </button>
@@ -59,31 +74,33 @@
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-10 max-w-4xl">
         <div class="relative mb-10 rounded-xl overflow-hidden shadow-lg article-img">
-            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bfabd35d-4181-4aef-9d8c-a9379c209b31.png" 
-                 alt="Illustration of smartphone with conflicting messages" 
-                 class="w-full h-auto"
-                 id="articleHeroImage">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bfabd35d-4181-4aef-9d8c-a9379c209b31.png"
+                alt="Illustration of smartphone with conflicting messages" class="w-full h-auto" id="articleHeroImage">
             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
-                <h1 class="text-3xl font-bold text-white">What Is a Psychological Trap? – My Perspective</h1>
-                <p class="text-gray-100 mt-2">Understanding modern attention manipulation techniques</p>
+                <h1 class="text-3xl font-bold text-blue-400">What Is a Psychological Trap? – My Perspective</h1>
+                <p class="text-blue-400 mt-2">Understanding modern attention manipulation techniques</p>
             </div>
         </div>
-        <p class="mb-4">In today’s hyper-connected world, attention is currency. The way we engage online — whether on WhatsApp, Instagram, YouTube, or LinkedIn — is heavily influenced by how content triggers our thoughts.</p>
+        <p class="mb-4">In today’s hyper-connected world, attention is currency. The way we engage online — whether on
+            WhatsApp, Instagram, YouTube, or LinkedIn — is heavily influenced by how content triggers our thoughts.</p>
 
-        <p class="mb-4">One tactic I’ve observed (and find fascinating) is what I call a <strong>Psychological Trap</strong>.</p>
+        <p class="mb-4">One tactic I’ve observed (and find fascinating) is what I call a <strong>Psychological
+                Trap</strong>.</p>
 
         <h2 class="text-2xl font-semibold mt-6 mb-2 text-white">The Trap in Action</h2>
         <p class="mb-4">Imagine someone posts a WhatsApp story saying:</p>
         <blockquote class="bg-gray-800 p-4 rounded mb-4 text-gray-200 border-l-4 border-indigo-500">
             <p>“This movie is a world-class flop.”</p>
         </blockquote>
-        <p class="mb-4">But the movie clip or poster they show is clearly from a blockbuster. Naturally, people get confused.</p>
+        <p class="mb-4">But the movie clip or poster they show is clearly from a blockbuster. Naturally, people get
+            confused.</p>
         <ul class="list-disc list-inside mb-4 text-gray-200">
             <li>“Wait… why are they calling this a flop?”</li>
             <li>“Is this sarcasm? Or is there a hidden message?”</li>
             <li>“What’s going on?”</li>
         </ul>
-        <p class="mb-4">That moment of confusion activates curiosity. The contradiction between the message and the visuals makes people stop, think, and often engage — asking questions, commenting, or clicking a link.</p>
+        <p class="mb-4">That moment of confusion activates curiosity. The contradiction between the message and the
+            visuals makes people stop, think, and often engage — asking questions, commenting, or clicking a link.</p>
         <p class="mb-4">That’s the psychological trap.</p>
 
         <h2 class="text-2xl font-semibold mt-6 mb-2">Why It Works</h2>
@@ -97,7 +114,7 @@
             <li>Unexpected perspectives</li>
         </ul>
         <p class="mb-4">It’s the same logic behind clickbait headlines like:</p>
-        <blockquote class="bg-gray-200 p-4 rounded mb-4">
+         <blockquote class="bg-gray-800 p-4 rounded mb-4 text-gray-200 border-l-4 border-indigo-500">
             <p>“You won’t believe what happened next.”</p>
         </blockquote>
         <p class="mb-4">Or YouTube thumbnails showing extreme expressions with vague titles.</p>
@@ -112,10 +129,12 @@
             <li>Scams and phishing</li>
             <li>Viral posts</li>
         </ul>
-        <p class="mb-4">Even in daily life, you’ll see people using this method to spark curiosity and guide attention where they want it.</p>
+        <p class="mb-4">Even in daily life, you’ll see people using this method to spark curiosity and guide attention
+            where they want it.</p>
 
         <h2 class="text-2xl font-semibold mt-6 mb-2">My Conclusion</h2>
-        <p class="mb-4">To me, a Psychological Trap is any message that manipulates perspective or emotion — especially using contradiction — to provoke a reaction. It’s not always bad; sometimes it’s just clever marketing.</p>
+        <p class="mb-4">To me, a Psychological Trap is any message that manipulates perspective or emotion — especially
+            using contradiction — to provoke a reaction. It’s not always bad; sometimes it’s just clever marketing.</p>
         <p class="mb-4">But being aware of it helps us:</p>
         <ul class="list-disc list-inside mb-4">
             <li>Stay critical</li>
@@ -125,44 +144,56 @@
 
         <div class="bg-gray-800 p-8 rounded-xl shadow-xl mt-14 border border-gray-700">
             <div class="flex items-center space-x-4 mb-6">
-                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d280b410-1a52-4b3a-96ea-e850b2e450ee.png" alt="Author profile" class="w-12 h-12 rounded-full">
-                <div>
+                <!-- <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d280b410-1a52-4b3a-96ea-e850b2e450ee.png"
+                    alt="Author profile" class="w-12 h-12 rounded-full"> -->
+                <!-- <div>
                     <h4 class="font-semibold">Dr. Alex Chen</h4>
                     <p class="text-gray-500 text-sm">Behavioral Psychologist & Digital Strategist</p>
-                </div>
+                </div> -->
             </div>
             <div class="flex flex-wrap gap-3 mb-4">
-                <button onclick="shareArticle()" 
-                        class="px-5 py-3 bg-gradient-to-r from-indigo-500 to-blue-500 text-white rounded-lg hover:from-indigo-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 flex items-center gap-2 shadow-lg">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47c.131.04.274.06.415.06z"></path></svg>
+                <button onclick="shareArticle()"
+                    class="px-5 py-3 bg-gradient-to-r from-indigo-500 to-blue-500 text-white rounded-lg hover:from-indigo-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 flex items-center gap-2 shadow-lg">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47c.131.04.274.06.415.06z">
+                        </path>
+                    </svg>
                     Share
                 </button>
                 <button onclick="tweetArticle()"
-                        class="px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors flex items-center gap-2">
-                    <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"></path></svg>
+                    class="px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors flex items-center gap-2">
+                    <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path
+                            d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84">
+                        </path>
+                    </svg>
                     Tweet
                 </button>
                 <button onclick="saveForLater()"
-                        class="px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg>
+                    class="px-4 py-2 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                    </svg>
                     Save
                 </button>
                 <div class="flex items-center ml-auto">
                     <span class="text-sm text-gray-500 mr-2">Reactions:</span>
-                    <button onclick="reactLike()" class="p-2 hover:bg-indigo-50 rounded-full transition-all transform hover:scale-110 active:scale-95">
+                    <button onclick="reactLike()"
+                        class="p-2 hover:bg-indigo-50 rounded-full transition-all transform hover:scale-110 active:scale-95">
                         👍 <span id="likeCount" class="ml-1 font-medium text-indigo-600">0</span>
                     </button>
-                    <button onclick="reactInteresting()" class="p-1 hover:bg-gray-100 rounded-full transition-colors ml-2">
+                    <button onclick="reactInteresting()"
+                        class="p-1 hover:bg-gray-100 rounded-full transition-colors ml-2">
                         🤔 <span id="interestingCount" class="ml-1 text-sm">0</span>
                     </button>
                 </div>
             </div>
-            <h3 class="text-xl font-semibold">Have you noticed this kind of psychological trap online? What are your thoughts on using it in marketing or content strategy?</h3>
+            <h3 class="text-xl font-semibold">Have you noticed this kind of psychological trap online? What are your
+                thoughts on using it in marketing or content strategy?</h3>
             <p>Let’s discuss 👇</p>
         </div>
-
-        <h2 class="text-2xl font-semibold mt-6 mb-2">Image Description</h2>
-        <p class="italic mb-4">A person looking at a phone screen with a confused expression, standing in front of a split screen. On one side of the phone screen is a “blockbuster” movie scene (bright, exciting, cinematic), and on the other side, a big red label that says “WORLD-CLASS FLOP.” The background is a digital or social media setting with chat bubbles, notifications, and question marks floating around the person’s head. Mood is curious and mysterious, not scary.</p>
 
         <footer class="mt-16 border-t border-gray-200 pt-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -173,29 +204,22 @@
                 <div>
                     <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-indigo-600">Articles</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-indigo-600">About</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-indigo-600">Contact</a></li>
+                        <li><a href="#" class="text-lg font-semibold mb-4 hover:text-indigo-600">Articles</a></li>
+                        <li><a href="#" class="text-lg font-semibold mb-4 hover:text-indigo-600">About</a></li>
+                        <li><a href="#" class="text-lg font-semibold mb-4 hover:text-indigo-600">Contact</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Tags</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">#Psychology</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">#Marketing</span>
-                        <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">#SocialMedia</span>
-                    </div>
-                </div>
+             
             </div>
-            <div class="mt-8 text-center text-gray-500 text-sm">
-                &copy; 2023 MindTraps. All rights reserved.
+            <div class="text-sm font-semibold mb-4 ">
+                &copy; 2025 MindTraps. No rights reserved.
             </div>
         </footer>
     </div>
 
-<script>
+    <script>
         // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
             // Mobile menu toggle logic here
             console.log('Mobile menu clicked');
         });
@@ -217,7 +241,6 @@
 
         function saveForLater() {
             localStorage.setItem('savedArticle', document.title);
-            alert('Article saved for later!');
         }
 
         function reactLike() {
@@ -233,10 +256,11 @@
         }
 
         // Animate hero image on load
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const heroImage = document.getElementById('articleHeroImage');
             heroImage.classList.add('animate-fadeIn');
         });
     </script>
 </body>
+
 </html>
